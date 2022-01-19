@@ -4,6 +4,7 @@
 <head>
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
+
 </head>
 <body>
     <script>
@@ -12,12 +13,12 @@
         
     </script>
     <input type="button" value="dark"
-    onclick="document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='gray';
+    onclick="target.style.backgroundColor='black';
+            target.style.color='gray';
             ">
     <input type="button" value="light"
-    onclick="document.querySelector('body').style.backgroundColor='white'
-            document.querySelector('body').style.color='black';
+    onclick="target.style.backgroundColor='white'
+            target.style.color='black';
             ">
     
   <h1><a href="index.html">WEB</a></h1>
@@ -31,5 +32,11 @@
     identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the
     Internet.
   </p>
+  
+  <script>
+    let target = document.querySelector('body');
+    console.log(target);
+    </script>
+
 </body>
 </html>
